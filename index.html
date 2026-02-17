@@ -68,7 +68,8 @@
           padding: 20px;
         }
       }
-            .loading-screen {
+
+      .loading-screen {
         position: fixed;
         top: 0;
         left: 0;
@@ -131,6 +132,7 @@
         100% {
           transform: rotate(360deg);
         }
+      }
     </style>
   </head>
   <body>
@@ -154,10 +156,7 @@
       >
         <img src="assets/categories/icedDrinks.jpg" alt="IcedDrinks" />
       </div>
-      <div
-        class="category-card"
-        onclick="window.location.href = 'frappe.html'"
-      >
+      <div class="category-card" onclick="window.location.href = 'frappe.html'">
         <img src="assets/categories/frappe.jpg" alt="Frappe" />
       </div>
       <div
@@ -186,10 +185,7 @@
       >
         <img src="assets/categories/breakfast1.jpg" alt="Breakfast" />
       </div>
-      <div
-        class="category-card"
-        onclick="window.location.href = 'matcha.html'"
-      >
+      <div class="category-card" onclick="window.location.href = 'matcha.html'">
         <img src="assets/categories/matcha.jpg" alt="Matcha" />
       </div>
       <div
@@ -210,17 +206,14 @@
       >
         <img src="assets/categories/milkshake.jpg" alt="MilkShake" />
       </div>
-      
+
       <div
         class="category-card"
         onclick="window.location.href = 'freshJuice.html'"
       >
         <img src="assets/categories/freshjuice.jpg" alt="FreshJuice" />
       </div>
-      <div
-        class="category-card"
-        onclick="window.location.href = 'mojito.html'"
-      >
+      <div class="category-card" onclick="window.location.href = 'mojito.html'">
         <img src="assets/categories/mojito.jpg" alt="Mojito" />
       </div>
       <div
@@ -229,42 +222,30 @@
       >
         <img src="assets/categories/karkadeh.jpg" alt="Karkadeh" />
       </div>
-      <div
-        class="category-card"
-        onclick="window.location.href = 'boba.html'"
-      >
+      <div class="category-card" onclick="window.location.href = 'boba.html'">
         <img src="assets/categories/boba.jpg" alt="Boba" />
       </div>
 
-       <div
+      <div
         class="category-card"
         onclick="window.location.href = 'hotChocolate.html'"
       >
         <img src="assets/categories/hotChocolate.jpg" alt="HotChocolate" />
       </div>
-       <div
-        class="category-card"
-        onclick="window.location.href = 'v60.html'"
-      >
+      <div class="category-card" onclick="window.location.href = 'v60.html'">
         <img src="assets/categories/v60.jpg" alt="V60" />
       </div>
-      
+
       <div
         class="category-card"
         onclick="window.location.href = 'turkishCoffe.html'"
       >
         <img src="assets/categories/turkishcoffe.jpg" alt="TurkishCoffe" />
       </div>
-      <div
-        class="category-card"
-        onclick="window.location.href = 'sahlab.html'"
-      >
+      <div class="category-card" onclick="window.location.href = 'sahlab.html'">
         <img src="assets/categories/sahlab.jpg" alt="Sahlab" />
       </div>
-      <div
-        class="category-card"
-        onclick="window.location.href = 'tea.html'"
-      >
+      <div class="category-card" onclick="window.location.href = 'tea.html'">
         <img src="assets/categories/tea.jpg" alt="Tea" />
       </div>
       <div
@@ -273,8 +254,13 @@
       >
         <img src="assets/categories/softDrinks.jpg" alt="SoftDrinks" />
       </div>
-
     </div>
+
+    <script>
+      window.addEventListener("load", function () {
+        const loadingScreen = document.getElementById("loadingScreen");
+        loadingScreen.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>
-
