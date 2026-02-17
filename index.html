@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: url("assets/bg.jpg") fixed repeat;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #c0813d;
+        padding: 20px;
+      }
+
+      .header img {
+        width: 100px;
+        height: auto;
+        margin-left: -20px;
+      }
+
+      .categories {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        padding: 40px;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .category-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+
+      .category-card:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+      }
+
+      .category-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      @media (max-width: 768px) {
+        .categories {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Coffee&Co.</h1>
+      <img src="assets/logo.png" alt="" />
+    </div>
+
+    <div class="categories">
+      <div
+        class="category-card"
+        onclick="window.location.href = 'icedDrinks.html'"
+      >
+        <img src="assets/categories/icedDrinks.jpg" alt="IcedDrinks" />
+      </div>
+      <div
+        class="category-card"
+        onclick="window.location.href = 'frappe.html'"
+      >
+        <img src="assets/categories/frappe.jpg" alt="Frappe" />
+      </div>
+      <div
+        class="category-card"
+        onclick="window.location.href = 'hotDrinks.html'"
+      >
+        <img src="assets/categories/hotDrinks1.jpg" alt="HotDrinks" />
+      </div>
+      <div
+        class="category-card"
+        onclick="window.location.href = 'desserts.html'"
+      >
+        <img src="assets/categories/desserts1.jpg" alt="Dessert" />
+      </div>
+
+      <div
+        class="category-card"
+        onclick="window.location.href = 'bakeries.html'"
+      >
+        <img src="assets/categories/bakeries.jpg" alt="Bakery" />
+      </div>
+
+      <div
+        class="category-card"
+        onclick="window.location.href = 'breakfast.html'"
+      >
+        <img src="assets/categories/breakfast1.jpg" alt="Breakfast" />
+      </div>
+      <div
+        class="category-card"
+        onclick="window.location.href = 'matcha.html'"
+      >
+        <img src="assets/categories/matcha.jpg" alt="Matcha" />
+      </div>
+      <div
+        class="category-card"
+        onclick="window.location.href = 'smoothie.html'"
+      >
+        <img src="assets/categories/smoothie.jpg" alt="Smoothie" />
+      </div>
+      <div
+        class="category-card"
+        onclick="window.location.href = 'sunshine.html'"
+      >
+        <img src="assets/categories/sunshine.jpg" alt="Sunshine" />
+      </div>
+      <div
+        class="category-card"
+        onclick="window.location.href = 'milkShake.html'"
+      >
+        <img src="assets/categories/milkshake.jpg" alt="MilkShake" />
+      </div>
+      
+      <div
+        class="category-card"
+        onclick="window.location.href = 'freshJuice.html'"
+      >
+        <img src="assets/categories/freshjuice.jpg" alt="FreshJuice" />
+      </div>
+      <div
+        class="category-card"
+        onclick="window.location.href = 'mojito.html'"
+      >
+        <img src="assets/categories/mojito.jpg" alt="Mojito" />
+      </div>
+      <div
+        class="category-card"
+        onclick="window.location.href = 'karkadeh.html'"
+      >
+        <img src="assets/categories/karkadeh.jpg" alt="Karkadeh" />
+      </div>
+      <div
+        class="category-card"
+        onclick="window.location.href = 'boba.html'"
+      >
+        <img src="assets/categories/boba.jpg" alt="Boba" />
+      </div>
+
+       <div
+        class="category-card"
+        onclick="window.location.href = 'hotChocolate.html'"
+      >
+        <img src="assets/categories/hotChocolate.jpg" alt="HotChocolate" />
+      </div>
+       <div
+        class="category-card"
+        onclick="window.location.href = 'v60.html'"
+      >
+        <img src="assets/categories/v60.jpg" alt="V60" />
+      </div>
+      
+      <div
+        class="category-card"
+        onclick="window.location.href = 'turkishCoffe.html'"
+      >
+        <img src="assets/categories/turkishcoffe.jpg" alt="TurkishCoffe" />
+      </div>
+      <div
+        class="category-card"
+        onclick="window.location.href = 'sahlab.html'"
+      >
+        <img src="assets/categories/sahlab.jpg" alt="Sahlab" />
+      </div>
+      <div
+        class="category-card"
+        onclick="window.location.href = 'tea.html'"
+      >
+        <img src="assets/categories/tea.jpg" alt="Tea" />
+      </div>
+      <div
+        class="category-card"
+        onclick="window.location.href = 'softDrinks.html'"
+      >
+        <img src="assets/categories/softDrinks.jpg" alt="SoftDrinks" />
+      </div>
+
+    </div>
+  </body>
+</html>
